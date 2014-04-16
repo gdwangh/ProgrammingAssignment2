@@ -4,6 +4,7 @@
 ## Write a short comment describing this function
 
 ## creates a special "matrix" object that can cache its inverse
+
 makeCacheMatrix <- function(x = matrix()) {
   invM<-NULL
   
@@ -51,3 +52,8 @@ cacheSolve <- function(x, ...) {
   x$setInverse(invM)
   invM
 }
+
+
+## test case
+## x<-makeCacheMatrix(matrix(c(1.835044e+01,8.392485e-04,8.392485e-04,4.093558e-07),2,2))
+## cacheSolve(x)
